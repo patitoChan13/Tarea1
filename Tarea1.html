@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Club de Videos">
+    <meta name="Keywords" content="peliculas, videos, cine, series">
+    <meta property="og:title" content="Club de Videos">
+    <title>Club de Videos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Club de Videos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#peliculas">Peliculas</a></li>
+                <li><a href="#actores">Actores</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos al Club de Videos</h2>
+            <p>Aqui encontraras las mejores peliculas</p>
+            <button>Ver peliculas</button>
+        </section>
+        <section id="peliculas">
+            <h2>Peliculas destacadas</h2>
+            <article itemscope itemtype="https://mipagina/movie">
+                <img src="images/noche.jpg" alt="Paisaje de noche" itemprop="Paisaje de noche">
+                <h3 itemprop="name">Tarzan</h3>
+                <p itemprop="description">La historia de tarzan </p>
+                <span itemprop="director">Directorio: Jose Perez</span>
+                <span itemprop="published">Año 2026</span>
+            </article>
+            <article itemscope itemtype="https://mipagina/movie">
+                <img src="images/dead.jpg" alt="Peliculas de heroes con comedia" itemprop="Peliculas de heroes con comedia">
+                <h3 itemprop="name">Deadpool y Wolverine</h3>
+                <p itemprop="description">La historia de dos heores de otro universo </p>
+                <span itemprop="director">Directorio: Carlos Rivera</span>
+                <span itemprop="published">Año 2026</span>
+            </article>
+            <article></article>
+        </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <blockquote>
+                "Esta seccion tiene las mejores peliculas."
+                <cite>Ana Valle </cite>
+            </blockquote>
+            <blockquote>
+                "Excelente calidad de resolucion."
+                <cite>Matias Perez</cite>
+            </blockquote>
+        </section>
+        <section id="contacto">
+            <h2>Contacto:</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required minlength="3">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required minlength="3">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" required minlength="20"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar mensaje">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
